@@ -1,2 +1,2 @@
-# teachy
+# Teachy
 Teachy App
