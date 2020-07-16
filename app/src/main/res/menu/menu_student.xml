@@ -7,13 +7,8 @@
         android:title="@string/title_dashboard" />
 
     <item
-        android:id="@+id/navigation_home"
+        android:id="@+id/navigation_task"
         android:icon="@drawable/ic_assignment_24px"
         android:title="@string/title_task" />
-
-    <item
-        android:id="@+id/navigation_notifications"
-        android:icon="@drawable/ic_users"
-        android:title="@string/title_users" />
 
 </menu>
