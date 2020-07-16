@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/navigation_home"
         android:name="com.ingjuanocampo.teachy.ui.home.HomeFragment"
-        android:label="@string/title_home"
+        android:label="@string/title_task"
         tools:layout="@layout/fragment_home" />
 
     <fragment
@@ -20,6 +20,6 @@
     <fragment
         android:id="@+id/navigation_notifications"
         android:name="com.ingjuanocampo.teachy.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
+        android:label="@string/title_users"
         tools:layout="@layout/fragment_notifications" />
 </navigation>
