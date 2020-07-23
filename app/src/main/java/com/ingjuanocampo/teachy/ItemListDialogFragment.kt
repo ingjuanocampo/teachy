@@ -21,7 +21,7 @@ class ItemListDialogFragment : BottomSheetDialogFragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         list.layoutManager = LinearLayoutManager(context)
-        list.adapter =  ItemAdapter(10)
+        list.adapter =  ItemAdapter(2)
         list.adapter?.notifyDataSetChanged()
     }
 
