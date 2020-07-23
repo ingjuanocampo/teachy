@@ -25,6 +25,7 @@ class MainActivity : AppCompatActivity() {
         navView.setupWithNavController(navController)
 
         icon_account.setOnClickListener {
+
             ItemListDialogFragment.newInstance().show(supportFragmentManager, "dialog")
 
         }

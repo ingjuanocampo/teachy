@@ -1,13 +1,13 @@
 package com.ingjuanocampo.teachy
 
 import android.os.Bundle
-import com.google.android.material.bottomsheet.BottomSheetDialogFragment
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import kotlinx.android.synthetic.main.fragment_item_list_dialog_list_dialog.*
 
 class ItemListDialogFragment : BottomSheetDialogFragment() {
@@ -22,9 +22,6 @@ class ItemListDialogFragment : BottomSheetDialogFragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         list.layoutManager = LinearLayoutManager(context)
         list.adapter =  ItemAdapter(10)
-
-
-
         list.adapter?.notifyDataSetChanged()
     }
 
