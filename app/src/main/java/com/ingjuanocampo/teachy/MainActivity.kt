@@ -1,12 +1,12 @@
 package com.ingjuanocampo.teachy
 
 import android.os.Bundle
-import android.view.MenuInflater
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupWithNavController
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -23,5 +23,10 @@ class MainActivity : AppCompatActivity() {
         //setupActionBarWithNavController(navController, appBarConfiguration)
         navView.inflateMenu(R.menu.menu_manager)
         navView.setupWithNavController(navController)
+
+        icon_account.setOnClickListener {
+            ItemListDialogFragment.newInstance().show(supportFragmentManager, "dialog")
+
+        }
     }
 }

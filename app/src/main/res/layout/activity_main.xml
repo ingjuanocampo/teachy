@@ -18,6 +18,7 @@
         android:drawableStart="@drawable/ic_teachy"/>
 
     <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/icon_account"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_margin="16dp"
