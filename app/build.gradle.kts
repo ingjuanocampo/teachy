@@ -1,3 +1,43 @@
+import dependencies.Android.compileAndroidSdkVersion
+import dependencies.Android.minAndroidSdkVersion
+
+plugins {
+    id("com.android.application")
+    kotlin("android")
+    kotlin("kapt")
+    id("kotlin-android-extensions")
+}
+
+android {
+    compileSdkVersion(compileAndroidSdkVersion)
+    defaultConfig {
+        applicationId = "com.ingjuanocampo.teachy"
+        minSdkVersion(minAndroidSdkVersion)
+        targetSdkVersion(compileAndroidSdkVersion)
+        versionCode = 1
+        versionName = "1.0"
+        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        getByName("release") {
+            isMinifyEnabled = false
+            proguardFiles(getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro")
+        }
+    }
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+}
+
+dependencies {
+    appDependencies()
+}
+
+/*
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
@@ -48,4 +88,4 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 
-}
+}*/
