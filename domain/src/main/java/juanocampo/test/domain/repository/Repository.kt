@@ -1,10 +1,17 @@
 package juanocampo.test.domain.repository
 
-import juanocampo.test.domain.entity.DomainEntity
+import kotlinx.coroutines.flow.Flow
 
-interface Repository {
+interface Repository<T> {
 
-    fun save()
+    fun synData()
 
-    fun load(): DomainEntity?
+    fun createOrUpdate(list: List<T>)
+
+    fun createOrUpdate(list: T)
+
+    fun getAll(): Flow<List<T>>
+
+    fun getById(id : String): Flow<T>
+
 }

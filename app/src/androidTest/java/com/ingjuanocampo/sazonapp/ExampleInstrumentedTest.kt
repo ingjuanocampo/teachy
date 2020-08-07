@@ -1,4 +1,4 @@
-package com.ingjuanocampo.teachy
+package com.ingjuanocampo.sazonapp
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

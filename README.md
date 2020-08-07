@@ -1,2 +1,1 @@
-# Teachy
-Teachy App
+# Sazon Life app

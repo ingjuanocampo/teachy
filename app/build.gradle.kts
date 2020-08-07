@@ -11,7 +11,7 @@ plugins {
 android {
     compileSdkVersion(compileAndroidSdkVersion)
     defaultConfig {
-        applicationId = "com.ingjuanocampo.teachy"
+        applicationId = "com.ingjuanocampo.sazonlife"
         minSdkVersion(minAndroidSdkVersion)
         targetSdkVersion(compileAndroidSdkVersion)
         versionCode = 1

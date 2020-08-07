@@ -1,4 +1,4 @@
-package com.ingjuanocampo.teachy
+package com.ingjuanocampo.sazonapp
 
 import org.junit.Test
 
