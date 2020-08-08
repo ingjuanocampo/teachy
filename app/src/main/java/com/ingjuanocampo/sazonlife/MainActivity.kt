@@ -1,4 +1,4 @@
-package com.ingjuanocampo.sazonapp
+package com.ingjuanocampo.sazonlife
 
 import android.os.Bundle
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -19,7 +19,11 @@ class MainActivity : AppCompatActivity() {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         val appBarConfiguration = AppBarConfiguration(setOf(
-                R.id.navigation_explore, R.id.navigation_dashboard, R.id.navigation_create))
+                R.id.navigation_explore,
+            R.id.navigation_dashboard,
+            R.id.createFragment,
+            R.id.navigation_favorite,
+            R.id.navigation_shop))
         //setupActionBarWithNavController(navController, appBarConfiguration)
         navView.inflateMenu(R.menu.menu_manager)
         navView.setupWithNavController(navController)

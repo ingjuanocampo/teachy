@@ -12,7 +12,7 @@
         android:title="" />
 
     <item
-        android:id="@+id/navigation_create"
+        android:id="@+id/createFragment"
         android:icon="@drawable/ic_add_circle_24px"
         android:title="" />
 

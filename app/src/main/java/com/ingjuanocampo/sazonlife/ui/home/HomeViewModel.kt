@@ -1,4 +1,4 @@
-package com.ingjuanocampo.sazonapp.ui.home
+package com.ingjuanocampo.sazonlife.ui.home
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

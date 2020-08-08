@@ -1,4 +1,4 @@
-package com.ingjuanocampo.sazonapp
+package com.ingjuanocampo.sazonlife
 
 import org.junit.Test
 

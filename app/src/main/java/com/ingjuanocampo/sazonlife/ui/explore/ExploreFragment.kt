@@ -1,4 +1,4 @@
-package com.ingjuanocampo.sazonapp.ui.explore
+package com.ingjuanocampo.sazonlife.ui.explore
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,7 +8,7 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
-import com.ingjuanocampo.sazonapp.R
+import com.ingjuanocampo.sazonlife.R
 
 class ExploreFragment : Fragment() {
 
