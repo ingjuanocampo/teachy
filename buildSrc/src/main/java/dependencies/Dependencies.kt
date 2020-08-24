@@ -32,6 +32,14 @@ object Dependencies {
 
     const val navigationAndroid = "androidx.navigation:navigation-fragment-ktx:$navigationComponent"
     const val navigationUI = "androidx.navigation:navigation-ui-ktx:$navigationComponent"
+
+    // Firebase
+
+    const val firebaseAnalytics =  "com.google.firebase:firebase-analytics-ktx:17.4.4"
+    const val firebaseStore = "com.google.firebase:firebase-firestore-ktx:21.5.0"
+    const val firebaseAuth = "com.google.firebase:firebase-auth-ktx:19.3.2"
+    const val firebaseUIAuth = "com.firebaseui:firebase-ui-auth:6.3.0"
+    const val googleServiceAuth = "com.google.android.gms:play-services-auth:18.0.0"
 }
 
 object Android {
@@ -52,6 +60,13 @@ fun DependencyHandler.kotlinClassPath() {
     classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion")
 }
 
+fun DependencyHandler.firebase() {
+    implementation(Dependencies.firebaseAnalytics)
+    implementation(Dependencies.firebaseStore)
+    implementation(Dependencies.firebaseUIAuth)
+    implementation(Dependencies.firebaseAuth)
+    implementation(Dependencies.googleServiceAuth)
+}
 
 fun DependencyHandler.dagger() {
     implementation(Dependencies.dagger)
@@ -98,6 +113,16 @@ fun DependencyHandler.architectureComponents() {
     implementation(Dependencies.extensions)
     implementation(Dependencies.liveDataLifeCycle)
     implementation(Dependencies.liveData)
+}
+
+fun DependencyHandler.uiCommons() {
+    implementation(Dependencies.picasso)
+    implementation(Dependencies.appCompat)
+    implementation(Dependencies.kotlinStdlib)
+    implementation(Dependencies.constraitLayout)
+    implementation(Dependencies.recyclerView)
+    implementation(Dependencies.androidCore)
+
 }
 
 

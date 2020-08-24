@@ -9,6 +9,7 @@ fun DependencyHandler.dataDependencies() {
     implementation(Dependencies.picasso)
     implementation(Dependencies.appCompat)
     implementation(Dependencies.androidCore)
+    firebase()
     coroutinesWithAndroid()
     testDependencies()
     testAndroidDependencies()

@@ -7,6 +7,7 @@ plugins {
     kotlin("kapt")
     id("kotlin-android-extensions")
     id("kotlin-android")
+    id( "com.google.gms.google-services")
 }
 
 android {
