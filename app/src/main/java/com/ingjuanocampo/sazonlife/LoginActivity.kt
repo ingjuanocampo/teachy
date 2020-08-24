@@ -38,12 +38,15 @@ class LoginActivity: BaseActivity() {
     // Enable Firestore logging
 
     private fun startSignIn() {
+// Choose authentication providers
+        val providers = arrayListOf(
+            AuthUI.IdpConfig.EmailBuilder().build(),
+            AuthUI.IdpConfig.GoogleBuilder().build())
+
         // Sign in with FirebaseUI
        val intent: Intent = AuthUI.getInstance().createSignInIntentBuilder()
             .setAvailableProviders(
-                listOf(
-                    AuthUI.IdpConfig.EmailBuilder().build()
-                )
+               providers
             )
             .setIsSmartLockEnabled(false)
             .build()
