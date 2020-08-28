@@ -24,4 +24,11 @@
         <item name="android:textSize">@dimen/text_large</item>
     </style>
 
+    <style name="Dialog_Transparent" parent="AppTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@color/transparentGray</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+
+    </style>
+
 </resources>
