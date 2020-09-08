@@ -1,6 +1,6 @@
 package juanocampo.test.data.mapper
 
-import juanocampo.test.data.sources.local.model.DataEntity
+import juanocampo.test.data.sources.local.entity.DataEntity
 import juanocampo.test.domain.entity.DomainEntity
 
 interface DataMapper {

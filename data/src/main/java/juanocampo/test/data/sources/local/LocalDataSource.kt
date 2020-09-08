@@ -1,6 +1,6 @@
 package juanocampo.test.data.sources.local
 
-import juanocampo.test.data.sources.local.model.DataEntity
+import juanocampo.test.data.sources.local.entity.DataEntity
 import kotlinx.coroutines.flow.Flow
 
 interface LocalDataSource {
