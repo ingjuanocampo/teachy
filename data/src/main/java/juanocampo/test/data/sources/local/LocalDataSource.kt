@@ -10,5 +10,4 @@ interface LocalDataSource {
     fun getAll(): Flow<List<DataEntity>>
     fun getById(id: String): Flow<DataEntity>
 
-
 }

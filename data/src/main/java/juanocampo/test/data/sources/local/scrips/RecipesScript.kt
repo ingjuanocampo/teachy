@@ -2,7 +2,7 @@ package juanocampo.test.data.sources.local.scrips
 
 import com.google.gson.Gson
 import juanocampo.test.data.sources.local.entity.RecipeData
-import juanocampo.test.data.sources.local.entity.StepData
+import juanocampo.test.data.sources.local.restaurant.StepData
 
 val DEFAULT_RECIPES = arrayListOf(
     RecipeData(

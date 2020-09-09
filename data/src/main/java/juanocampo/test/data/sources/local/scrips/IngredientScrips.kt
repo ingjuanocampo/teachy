@@ -1,6 +1,6 @@
 package juanocampo.test.data.sources.local.scrips
 
-import juanocampo.test.data.sources.local.entity.IngredientData
+import juanocampo.test.data.sources.local.ingredient.IngredientData
 
 val DEFAULT_INGREDIENTS = arrayListOf(
     IngredientData(

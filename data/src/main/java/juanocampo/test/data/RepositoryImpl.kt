@@ -2,7 +2,6 @@ package juanocampo.test.data
 
 import juanocampo.test.data.mapper.DataMapper
 import juanocampo.test.data.sources.local.LocalDataSource
-import juanocampo.test.data.sources.RemoteDataSource
 import juanocampo.test.domain.entity.DomainEntity
 import juanocampo.test.domain.repository.Repository
 import kotlinx.coroutines.flow.Flow
@@ -10,13 +9,10 @@ import kotlinx.coroutines.flow.map
 
 class RepositoryImpl(
     private val localDataSource: LocalDataSource,
-    private val remoteDataSource: RemoteDataSource,
     private val dataMapper: DataMapper): Repository<DomainEntity> {
 
-
     override fun synData() {
-        val items = remoteDataSource.fetchAll()
-        localDataSource.insertOrUpdate(items)
+       //Nothing here because firebase is only one resource for for now
     }
 
     override fun createOrUpdate(list: List<DomainEntity>) {
@@ -29,23 +25,14 @@ class RepositoryImpl(
     }
 
     override fun getAll(): Flow<List<DomainEntity>> {
-        return localDataSource.getAll().map { it ->
-            var localItems = it
-            if (localItems.isNullOrEmpty()) {
-                localItems = remoteDataSource.fetchAll()
-                localDataSource.insertOrUpdate(localItems)
-            }
-            localItems.map { dataMapper.map(it) }
+        return localDataSource.getAll().map {
+            return@map it.map { entity -> dataMapper.mapToDomain(entity) }
         }
-
     }
 
     override fun getById(id: String): Flow<DomainEntity> {
         return localDataSource.getById(id).map { it ->
-            dataMapper.map(it)
+            dataMapper.mapToDomain(it)
         }
     }
-
-
-
 }
